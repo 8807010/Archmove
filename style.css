@@ -214,13 +214,39 @@ body {
     padding-bottom: 64px;
 }
 
-.gallery__img {
-    opacity: 1;
-    transition: .5s ease;
+.gallery__link {
+    display: block; 
+    position: relative;
 }
 
-.gallery__img:hover {
-    opacity: 0.8;
+.gallery__link:after {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0,0,0,.5);  
+    opacity: 0; 
+}
+
+.gallery__link::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url(./assets/images/hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;  
+    z-index: 1; 
+}
+
+.gallery__link:hover:before,
+.gallery__link:hover:after { 
+    opacity: 1;
 }
 
 .features__title {
