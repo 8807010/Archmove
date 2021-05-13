@@ -134,6 +134,10 @@ body {
     margin-right: 50px;
 }
 
+.header__btn--sing-up:hover {
+    opacity: 0.6;
+}
+
 .main__title {
     font-family: "NewYorkExtraLargeBold";
     font-weight: 600;
@@ -170,6 +174,10 @@ body {
     background-color: #FD665E;
     border-radius: 4px;
     border: none;
+}
+
+.btn:hover {
+    opacity: 0.6;
 }
 
 .main__btn {
@@ -417,7 +425,9 @@ body {
     justify-content: space-between;
 }
 
-
+/* .mfp-close {
+    display: none;
+} */
 
 .mfp-bottom-bar {
     display: none;
@@ -426,3 +436,12 @@ body {
 img.mfp-img {
     height: 100vh ;
 }
+
+/* .slick-prev .slick-arrow {
+    background-image: url(./assets/images/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+} */
+
